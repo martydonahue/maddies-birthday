@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root { --pink: #ef7eaa; --dark: #693d53; --light: #fff8fb; --outline: #f7cbdc; }
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; padding: 28px 16px; display: grid; place-items: center; background: radial-gradient(circle at 15% 15%, #fff3f8 0, transparent 40%), radial-gradient(circle at 85% 85%, #f9cadd 0, transparent 38%), linear-gradient(135deg, #ffe5ef, #fff7fb); font-family: 'DM Sans', sans-serif; color: var(--dark); }
+.card { width: min(100%, 510px); padding: 36px 34px 24px; background: rgba(255,255,255,.87); border: 1px solid #fff; border-radius: 30px; text-align: center; box-shadow: 0 22px 65px rgba(179,80,119,.16); }
+.sparkles { color: var(--pink); font-size: 23px; letter-spacing: 14px; margin-left: 14px; }
+.eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #b67b94; margin: 16px 0 28px; }
+h1,h2 { font-family: 'Playfair Display', Georgia, serif; line-height: 1.18; margin: 10px 0 15px; }
+h1 { font-size: clamp(32px, 7vw, 43px); } h2 { font-size: clamp(29px, 6vw, 36px); }
+p { font-size: 15px; line-height: 1.75; color: #866577; }
+.screen { animation: float-in .35s ease both; }
+.hidden { display: none; }
+.big-heart { font-size: 62px; margin-bottom: 10px; }
+.tiny-heart { font-size: 36px; color: var(--pink); }
+.envelope { font-size: 60px; }
+button { font: inherit; cursor: pointer; transition: transform .15s, background .15s, box-shadow .15s; }
+button:hover { transform: translateY(-2px); }
+button:focus-visible { outline: 3px solid #a64c78; outline-offset: 3px; }
+.primary-button { margin-top: 20px; padding: 15px 24px; background: var(--pink); border: 0; border-radius: 99px; color: white; font-weight: 700; box-shadow: 0 8px 18px rgba(239,126,170,.28); }
+.primary-button:hover { background: #df6796; }
+.choices { display: grid; gap: 11px; margin-top: 25px; }
+.choice-button { width: 100%; text-align: left; border: 1px solid var(--outline); background: var(--light); padding: 15px 20px; border-radius: 15px; color: var(--dark); font-weight: 600; }
+.choice-button:hover { background: #ffe9f1; }
+.love-note { background: #fff7fa; border: 1px dashed #eeb2ca; border-radius: 18px; padding: 25px; line-height: 1.9; font-size: 16px; white-space: pre-line; }
+footer { font-size: 12px; color: #bd8aa0; margin-top: 36px; }
+@keyframes float-in { from { opacity: 0; transform: translateY(9px); } to { opacity: 1; transform: translateY(0); } }
+@media(max-width: 420px) { .card { padding: 29px 21px 22px; } }
